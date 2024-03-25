@@ -34,11 +34,31 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				//Data Types
+				int Count = 0;
+				int numbersSum = 0;
+				int value = GetValue();
+				float mean = 0f;
+				while (value != -1)
+				{
+					//Add count to itself
+				Count++;
+                    //Update the sum by adding the number from GetValue()
+                    numbersSum = numbersSum + value;
+					//Update Value
+					value = GetValue();
+				}
+				//If statement
+				if (Count > 0)
+				{
+					mean = (float)numbersSum / Count;
+				}
+				//print Answers
+				Console.WriteLine(Count + " " + mean);
 
-
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
